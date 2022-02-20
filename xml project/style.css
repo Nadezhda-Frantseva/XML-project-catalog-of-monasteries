@@ -1,0 +1,28 @@
+body {
+    font-family: "Lucida Handwriting", cursive;
+}
+
+h1 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.estatesP {
+    font-style: italic;
+}
+
+li {
+    list-style-type: circle;
+}
+
+div > :not(img) {
+    float: left;
+}
+
+img {
+    float: right;
+}
+
+.cleanFloat {
+    clear: both;
+}

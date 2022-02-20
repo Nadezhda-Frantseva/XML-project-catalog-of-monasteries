@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- <?xml-stylesheet type="text/xsl" href="XMLToHTML.xslt"?> -->
+<!-- <!DOCTYPE Monastery_Catalog [ -->
+<!--     <!ELEMENT Pic (#PCDATA)> -->
+<!--     <!NOTATION JPG SYSTEM "image/jpeg"> -->
+<!--     <!ENTITY img1 SYSTEM "AladzhaMonastery.jpg" NDATA JPG> -->
+<!--     <!ATTLIST Pic src ENTITY #IMPLIED> -->
+<!-- ]> -->
+
+<Monastery_Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="xmlSchema.xsd">
+  <Region direction="Юг" region_id="S"></Region>
+  <Region direction="Север" region_id="N"></Region>
+  <Region direction="Център" region_id="C"></Region>
+  <Region direction="Изток" region_id="E"></Region>
+  <Region direction="Запад" region_id="W"></Region>
+ 
+  <Monastery name="Къпиновски манастир" area="0000" region="C" monastery_id="KapM" year="1272">
+    <Estates name="Църква Св. Николай" estates_id="C-hSvN"></Estates> <!--църквата "Св. Николай"-->
+    <Estates name="Параклис Въведение Богородично" estates_id="C-lIMG"></Estates> <!--параклиса "Въведения Богородично"-->
+    <Estates name="Параклис Благовещение" estates_id="AC-l"></Estates> <!--параклис "Благовещение"-->
+    <Abbots name="Софроний Врачански" year="1794" church="C-hSvN"></Abbots>
+    <Pic src="KapinovoMonastery.jpeg"></Pic>
+  </Monastery>
+  <Monastery name="Килифаревски манастир" area="0000" region="C" monastery_id="KilM" year="1348">
+    <Estates name="Църква Свети Димитър" estates_id="C-hSvD"></Estates> <!--църквата "Св. Димитър"-->
+    <Estates name="Параклис Св. Теодосий Търновски" estates_id="C-lSvTT"></Estates> <!--параклис "Св. Теодосий Търновски"-->
+    <Estates name="Параклис Св. Иван Рилски" estates_id="C-lSvIR"></Estates> <!--параклис "Св. Иван Рилски"-->
+    <Abbots name="Монах Зотик" year="1825" church="C-hSvD"></Abbots>
+    <Pic src="KilifarevoMonastery.jpg"></Pic>
+  </Monastery>
+  <Monastery name="Преображенски манастир" area="0000" region="C" monastery_id="TrM" century="13">
+    <Estates name="Църква Преображение Господне" estates_id="C-hTG"></Estates> <!--църква "Преображение Господне"-->
+    <Estates name="Малка църква Благовещение" estates_id="C-hA"></Estates> <!--малката църква "Благовещение"-->
+    <Estates name="Параклис Св. Андрей" estates_id="C-SvAN"></Estates> <!--ппараклис "Св. Андрей"-->
+    <Abbots name="Теодосий Търновски" year="1348" church="C-hTG"></Abbots>
+    <Pic src="TransfigurationMonastery.jpg"></Pic>
+  </Monastery>
+  <Monastery name="Земенски манастир" area="0000" region="W" monastery_id="ZM" century="11">
+    <Estates name="Църква Св. Йоан Богослов" estates_id="C-hJT"></Estates> <!--църквата "Св. Йоан Богослов"-->
+    <Abbots name="Михаел" year="1876" church="C-hJT"></Abbots>
+    <Pic src="ZemenMonastery.jpg"></Pic>
+  </Monastery>
+
+  <Monastery name="Арбанашки манастир" region="C" monastery_id="ArbanasiM" century="13">
+    <Estates name="Църква Св. Никола" estates_id="C-N"></Estates>
+    <Estates name="Параклис Св. Илия" estates_id="C-E"></Estates>
+    <Estates name="Жилищни сгради" estates_id="C-RBAM"></Estates>
+    <Abbots name="Теодора Христова" church="C-N"></Abbots>
+    <Pic src="ArbanasiMonastery.jpg"></Pic>
+  </Monastery>
+  <Monastery name="Троянски манастир" region="C" monastery_id="TroyanM" century="17">
+    <Estates name="Църква Успение Богородично" estates_id="C-DMHMG"></Estates>
+    <Estates name="Църква Св. Св. Кирил и Методий" estates_id="C-SSCM"></Estates>
+    <Estates name="Жилищни сгради" estates_id="C-RBTM"></Estates>
+    <Abbots name="Епископ Зион" age="53" church="C-DMHMG"></Abbots>
+    <Pic src="TroyanMonastery.jpeg"></Pic>
+  </Monastery>
+  <Monastery name="Аладжа манастир" region="E" monastery_id="AladzhaM" century="12">
+   <Pic src="AladzhaMonastery.jpg"></Pic>
+  </Monastery>
+  <Monastery area="8800" name="Рилски манастир" region="W" monastery_id="RilaM" year="927">
+    <Estates name="Манастирски жилищен комплекс" estates_id="MLC"></Estates>
+    <Estates name="Църква Рождество Христово" estates_id="C-RH"></Estates>
+    <Estates name="Църква Успение на Св. Йоан Рилски" estates_id="UIR"></Estates>
+    <Estates name="Църква Свети Лука" estates_id="C-SL"></Estates>
+    <Estates name="Църква Покров Богородичен" estates_id="C-PB"></Estates>
+    <Abbots  name="Евлогий Адрианополски" age="59" church="C-RH"></Abbots>
+    <Pic src="RilaMonastery.jpg"></Pic>
+  </Monastery>
+</Monastery_Catalog>
