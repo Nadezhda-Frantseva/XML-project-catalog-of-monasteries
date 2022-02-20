@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<!DOCTYPE Monastery_Catalog[
+  <!ELEMENT Monastery_Catalog (Region+| Monastery+)*>
+  <!ELEMENT Region EMPTY>
+  <!ATTLIST Region region_id ID #REQUIRED>
+  <!ATTLIST Region direction CDATA #REQUIRED>
+  <!ELEMENT Monastery (Estates*, Abbots*, Pic?)>
+  <!ATTLIST Monastery monastery_id ID #REQUIRED>
+  <!ATTLIST Monastery region IDREF #REQUIRED>
+  <!ATTLIST Monastery name CDATA #REQUIRED>
+  <!ATTLIST Monastery year CDATA #IMPLIED>
+  <!ATTLIST Monastery area CDATA #IMPLIED>
+  <!ELEMENT Pic EMPTY>
+  <!ATTLIST Pic url ENTITY #IMPLIED>
+  <!ENTITY  RilaMonastery_url "RilaMon.JPG"  >
+  <!ENTITY  BachkovoMonastery_url "BachMon.JPG"  >
+  <!ENTITY  DryanovoMonastery_url  "DryanMon.JPG">
+  <!ENTITY  ShipkaMonastery_url "ShipMon.JPG"  >
+  <!ENTITY  RozhenMonastery_url "RojhMon.JPG"  >
+  <!ENTITY  KremikovtsyMonastery_url "KremMon.JPG"  >
+  <!ENTITY  CherepishMonastery_url "CherMon.JPG"  >
+  <!NOTATION jpg SYSTEM "image/jpeg">
+  <!ELEMENT Estates EMPTY>
+  <!ATTLIST Estates estates_id ID #REQUIRED>
+  <!ATTLIST Estates name CDATA #REQUIRED>
+  <!ATTLIST Estates area CDATA #IMPLIED>
+  <!ELEMENT Abbots EMPTY>
+  <!ATTLIST Abbots church IDREF #REQUIRED>
+  <!ATTLIST Abbots name CDATA #REQUIRED>
+  <!ATTLIST Abbots age CDATA #IMPLIED>
+]>
+<Monastery_Catalog>
+  
+  <Region direction="SouthWest" region_id="SW"></Region>
+  <Region direction="SouthEast" region_id="SE"></Region>
+  <Region direction="NorthEast" region_id="NE"></Region>
+  <Region direction="NorthWest" region_id="NW"></Region>
+  <Region direction="Central" region_id="C"></Region>
+  <Region direction="West" region_id="W"></Region>
+ 
+  <Monastery name="Kapinovo Monastery" area="0000" region="C" monastery_id="KapM"  year="1272">
+    <Estates name="Church Sveti Nikolai" estates_id="C-hSvN"></Estates> <!--църквата "Св. Николай"-->
+    <Estates name="Chapel Introductions to the Mother of God" estates_id="C-lIMG"></Estates> <!--параклиса "Въведения Богородично"-->
+    <Estates name="Annunciation Chapel" estates_id="AC-l"></Estates> <!--параклис "Благовещение"-->
+    <Abbots name="Sophrony Vratsanski" year="1794" church="C-hSvN"></Abbots>
+    <Pic url="&BachkovoMonastery_url;"></Pic> <!--to do-->
+  </Monastery>
+  <Monastery name="Kilifarevo Monastery" area="0000" region="C" monastery_id="KilM"  year="1348">
+    <Estates name="Church Sveti Dimitar" estates_id="C-hSvD"></Estates> <!--църквата "Св. Димитър"-->
+    <Estates name="Chapel Sveti Theodosius Tarnovski" estates_id="C-lSvTT"></Estates> <!--параклис "Св. Теодосий Търновски"-->
+    <Estates name="Chapel Sveti Ivan Rilski" estates_id="C-lSvIR"></Estates> <!--параклис "Св. Иван Рилски"-->
+    <Abbots name="monk Zotik" year="1825"></Abbots>
+    <Pic url="&DryanovoMonastery_url;"></Pic> <!--to do-->
+  </Monastery>
+  <Monastery name="Transfiguration Monastery" area="0000" region="C" monastery_id="TrM"  year="1250">
+    <Estates name="Church of the Transfiguration ot the God" estates_id="C-hTG"></Estates> <!--църква "Преображение Господне"-->
+    <Estates name="Small church Annunciation" estates_id="C-hA"></Estates> <!--малката църква "Благовещение"-->
+    <Estates name="Chapel Sveti Andrew" estates_id="C-lSvIR"></Estates> <!--ппараклис "Св. Андрей"-->
+    <Abbots name="Theodosius Tarnovski" year="1348"></Abbots>
+    <Pic url="&DryanovoMonastery_url;"></Pic> <!--to do-->
+  <Monastery name="Zemen Monastery" area="0000" region="W" monastery_id="ZM"  year="1010">
+    <Estates name="Church Sveti John Theologian" estates_id="C-hJT"></Estates> <!--църквата "Св. Йоан Богослов"-->
+    <Abbots name="Abbot Michael" year="1876"></Abbots>
+    <Pic url="&DryanovoMonastery_url;"></Pic> <!--to do-->
+  </Monastery>
+</Monastery_Catalog>
